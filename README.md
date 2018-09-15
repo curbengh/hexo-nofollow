@@ -1,10 +1,9 @@
-# hexo-autonofollow
+# hexo-filter-nofollow
+
 Adds nofollow attribute to all external links in your hexo blog posts automatically.
 
-
 ## Features
-* Add rel="external nofollow" to all external links, SEO friendly.
-* Add target="_blank", Open external links in new window or tab
+* Add rel="external nofollow noopener noreferrer" to all external links, which is SEO friendly.
 
 ## Install
 
@@ -13,14 +12,16 @@ $ npm install hexo-autonofollow --save
 ```
 
 ## Options
-You can configure this plugin in  _config.yml.
+
+You can configure this plugin in `_config.yml`.
+
 ```
 nofollow:
-	enable: true
-	exclude:
+  enable: true
+  exclude:
     - exclude1.com
     - exclude2.com
 ```
 
 - **enable** - Enable the plugin. Defaults to **false**.
-- **exclude** - Exclude hostname
+- **exclude** - Exclude hostname.
