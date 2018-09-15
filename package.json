@@ -1,5 +1,5 @@
 {
-  "name": "hexo-autonofollow",
+  "name": "hexo-suka-autonofollow",
   "version": "1.0.0",
   "description": "Adds nofollow attribute to all external links in your hexo posts automatically.",
   "main": "index.js",
@@ -13,16 +13,16 @@
   "keywords": [
     "hexo",
     "SEO",
-    "hexo-autonofollow",
+    "hexo-suka-autonofollow",
     "nofollow",
     "external"
   ],
   "author": "LiuZhichao <mail@liuzhichao.com> (http://liuzhichao.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/liuzc/hexo-autonofollow/issues"
+    "url": "https://github.com/SukkaW/hexo-suka-autonofollow/issues"
   },
-  "homepage": "https://github.com/liuzc/hexo-autonofollow",
+  "homepage": "https://github.com/SukkaW/hexo-suka-autonofollow",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2"
   }
