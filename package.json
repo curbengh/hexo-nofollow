@@ -1,6 +1,6 @@
 {
-  "name": "hexo-suka-autonofollow",
-  "version": "1.0.0",
+  "name": "hexo-filter-nofollow",
+  "version": "1.0.1",
   "description": "Adds nofollow attribute to all external links in your hexo posts automatically.",
   "main": "index.js",
   "scripts": {
