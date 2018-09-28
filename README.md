@@ -1,20 +1,46 @@
-# hexo-autonofollow
+# hexo-nofollow
+
+[![npm version](https://badge.fury.io/js/hexo-nofollow.svg)](https://www.npmjs.com/package/hexo-nofollow)
+[![Build Status](https://travis-ci.com/weyusi/hexo-nofollow.svg?branch=master)](https://travis-ci.com/weyusi/hexo-nofollow)
+[![NPM Dependencies](https://david-dm.org/weyusi/hexo-nofollow.svg)](https://david-dm.org/weyusi/hexo-nofollow)
+[![Known Vulnerabilities](https://snyk.io/test/npm/hexo-nofollow/badge.svg)](https://snyk.io/test/npm/hexo-nofollow)
+
+> This project is based on [hexo-autonofollow](https://github.com/liuzc/hexo-autonofollow)
+
 Adds nofollow attribute to all external links in your hexo blog posts automatically.
 
+The original package has not been [updated](https://www.npmjs.com/package/hexo-autonofollow) for a while. Its outdated [dependency](https://www.npmjs.com/package/cheerio) has a minor [vulnerability](https://snyk.io/test/npm/hexo-autonofollow).
+
+All the options are the same, so you can use this as a drop-in replacement.
 
 ## Features
-* Add rel="external nofollow" to all external links, SEO friendly.
-* Add target="_blank", Open external links in new window or tab
+* Add `rel="external nofollow noopener noreferrer"` to all external links, SEO friendly.
+* Add `target="_blank"`, Open external links in new window or tab
+
+For example,
+```markdown
+[example-link](https://example.com)
+```
+Becomes,
+```html
+<a href="https://example.com" rel="external nofollow noopener noreferrer" target="_blank">example-link</a>
+```
 
 ## Install
-
 ``` bash
-$ npm install hexo-autonofollow --save
+$ npm install hexo-nofollow --save
 ```
+
+## Usage
+To enable this plugin, insert the following to `_config.yml`:
+``` yaml
+nofollow:
+	enable: true
+```
+To exclude certain links, see below.
 
 ## Options
-You can configure this plugin in  _config.yml.
-```
+```yaml
 nofollow:
 	enable: true
 	exclude:
@@ -24,3 +50,8 @@ nofollow:
 
 - **enable** - Enable the plugin. Defaults to **false**.
 - **exclude** - Exclude hostname
+
+## Credits
+All credits go to the following work:
+- [hexo-autonofollow](https://github.com/weyusi/hexo-nofollow) by liuzc
+- [cheerio](https://github.com/cheeriojs/cheerio)
