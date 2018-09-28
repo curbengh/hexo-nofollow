@@ -1,29 +1,28 @@
 {
-  "name": "hexo-autonofollow",
-  "version": "1.0.0",
+  "name": "hexo-nofollow",
+  "version": "0.1.0",
   "description": "Adds nofollow attribute to all external links in your hexo posts automatically.",
+  "author": "weyusi",
+  "license": "MIT",
+  "homepage": "https://github.com/weyusi/hexo-autonofollow",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "directories": {
+    "lib": "./lib"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/liuzc/hexo-autonofollow.git"
+    "url": "https://github.com/weyusi/hexo-nofollow.git"
   },
-    "keywords": [
+  "keywords": [
     "hexo",
     "SEO",
-    "hexo-autonofollow",
     "nofollow",
-    "external"
+    "external",
+    "noopener",
+    "noreferrer",
+    "target-blank"
   ],
-  "author": "LiuZhichao <mail@liuzhichao.com> (http://liuzhichao.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/liuzc/hexo-autonofollow/issues"
-  },
-  "homepage": "https://github.com/liuzc/hexo-autonofollow",
   "dependencies": {
-    "cheerio": "^0.19.0"
+    "cheerio": "^0.22.0"
   }
 }
