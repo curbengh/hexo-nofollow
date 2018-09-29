@@ -15,7 +15,10 @@ All the options are the same, so you can use this as a drop-in replacement.
 
 ## Features
 * Add `rel="external nofollow noopener noreferrer"` to all external links, SEO friendly.
-* Add `target="_blank"`, Open external links in new window or tab
+* Add `target="_blank"`, Open external links in new window or tab. This can be disabled, see below.
+
+Hexo doesn't insert `target="_blank"` to all external links even if you set `external_link: true` (default value) in the _config.yml.
+This plugin make sure all external links are processed.
 
 For example,
 ```markdown
@@ -46,12 +49,16 @@ nofollow:
 	exclude:
     - exclude1.com
     - exclude2.com
+external_link: true
 ```
 
 - **enable** - Enable the plugin. Defaults to **false**.
-- **exclude** - Exclude hostname
+- **exclude** - Exclude hostname.
+- **external_link** - Add `target="_blank"`. Defaults to **true**.
+***Note:*** **external_link** setting already exists in default `_config.yml`. Only add it if you *can't* find it.
 
 ## Credits
 All credits go to the following work:
 - [hexo-autonofollow](https://github.com/weyusi/hexo-nofollow) by liuzc
 - [cheerio](https://github.com/cheeriojs/cheerio)
+- `target="_blank"` behaviour is noticed through this [commit](https://github.com/SukkaW/hexo-filter-nofollow/commit/6c5f49fb551237b42413c158b9294d58c4c8b221)

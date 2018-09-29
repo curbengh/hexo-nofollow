@@ -4,7 +4,7 @@
   "description": "Adds nofollow attribute to all external links in your hexo posts automatically.",
   "author": "weyusi",
   "license": "MIT",
-  "homepage": "https://github.com/weyusi/hexo-autonofollow",
+  "homepage": "https://github.com/weyusi/hexo-nofollow",
   "main": "index.js",
   "directories": {
     "lib": "./lib"
@@ -15,14 +15,16 @@
   },
   "keywords": [
     "hexo",
+    "hexo-nofollow",
     "SEO",
     "nofollow",
     "external",
     "noopener",
     "noreferrer",
-    "target-blank"
+    "target-blank",
+    "target_blank"
   ],
   "dependencies": {
-    "cheerio": "^0.22.0"
+    "cheerio": "1.0.0-rc.2"
   }
 }
