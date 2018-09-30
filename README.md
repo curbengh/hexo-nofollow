@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/hexo-nofollow.svg)](https://www.npmjs.com/package/hexo-nofollow)
 [![Build Status](https://travis-ci.com/weyusi/hexo-nofollow.svg?branch=master)](https://travis-ci.com/weyusi/hexo-nofollow)
 [![NPM Dependencies](https://david-dm.org/weyusi/hexo-nofollow.svg)](https://david-dm.org/weyusi/hexo-nofollow)
-[![Known Vulnerabilities](https://snyk.io/test/npm/hexo-nofollow/badge.svg)](https://snyk.io/test/npm/hexo-nofollow)
+[![Known Vulnerabilities](https://snyk.io/test/npm/hexo-nofollow/badge.svg)](https://snyk.io/test/npm/hexo-nofollow) [![Greenkeeper badge](https://badges.greenkeeper.io/weyusi/hexo-nofollow.svg)](https://greenkeeper.io/)
 
 > This project is based on [hexo-autonofollow](https://github.com/liuzc/hexo-autonofollow)
 
