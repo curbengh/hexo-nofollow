@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.com/weyusi/hexo-nofollow.svg?branch=master)](https://travis-ci.com/weyusi/hexo-nofollow)
 [![NPM Dependencies](https://david-dm.org/weyusi/hexo-nofollow.svg)](https://david-dm.org/weyusi/hexo-nofollow)
 [![Known Vulnerabilities](https://snyk.io/test/npm/hexo-nofollow/badge.svg)](https://snyk.io/test/npm/hexo-nofollow)
+[![Greenkeeper badge](https://badges.greenkeeper.io/weyusi/hexo-nofollow.svg)](https://greenkeeper.io/)
 
 > This project is based on [hexo-autonofollow](https://github.com/liuzc/hexo-autonofollow)
 
@@ -38,15 +39,15 @@ $ npm install hexo-nofollow --save
 To enable this plugin, insert the following to `_config.yml`:
 ``` yaml
 nofollow:
-	enable: true
+  enable: true
 ```
 To exclude certain links, see below.
 
 ## Options
 ```yaml
 nofollow:
-	enable: true
-	exclude:
+  enable: true
+  exclude:
     - exclude1.com
     - exclude2.com
 external_link: true
