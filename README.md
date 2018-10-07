@@ -38,15 +38,15 @@ $ npm install hexo-nofollow --save
 To enable this plugin, insert the following to `_config.yml`:
 ``` yaml
 nofollow:
-	enable: true
+  enable: true
 ```
 To exclude certain links, see below.
 
 ## Options
 ```yaml
 nofollow:
-	enable: true
-	exclude:
+  enable: true
+  exclude:
     - exclude1.com
     - exclude2.com
 external_link: true
