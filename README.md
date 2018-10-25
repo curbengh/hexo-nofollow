@@ -53,10 +53,11 @@ nofollow:
 external_link: true
 ```
 
-- **enable** - Enable the plugin. Defaults to **false**.
+- **enable** - Enable the plugin. Defaults to `false`.
 - **exclude** - Exclude hostname.
-- **external_link** - Add `target="_blank"`. Defaults to **true**.
-***Note:*** **external_link** setting already exists in default `_config.yml`. Only add it if you *can't* find it.
+- **external_link** - Add `target="_blank"`. Defaults to `true`.
+
+***Note:*** **external_link** setting is already in the default `_config.yml`. Only add it if you *can't* find it.
 
 ## Credits
 All credits go to the following work:
