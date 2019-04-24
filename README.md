@@ -48,16 +48,17 @@ To exclude certain links, see below.
 nofollow:
   enable: true
   exclude:
-    - exclude1.com
-    - exclude2.com
+    - 'exclude1.com'
+    - 'exclude2.com'
 external_link: true
 ```
 
 - **enable** - Enable the plugin. Defaults to `false`.
-- **exclude** - Exclude hostname.
+- **exclude** - Exclude hostname. Specify subdomain when applicable, including `www`
+  - `'exclude1.com'` does not apply to `www.exclude1.com` nor `en.exclude1.com`.
 - **external_link** - Add `target="_blank"`. Defaults to `true`.
 
-***Note:*** **external_link** setting is already in the default `_config.yml`. Only add it if you *can't* find it.
+***Note:*** **external_link** setting is already in the default `_config.yml`.
 
 ## Credits
 All credits go to the following work:
