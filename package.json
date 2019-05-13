@@ -9,6 +9,10 @@
   "directories": {
     "lib": "./lib"
   },
+  "files": [
+    "lib",
+    "index.js"
+  ],
   "engines": {
     "node": ">= 8"
   },
