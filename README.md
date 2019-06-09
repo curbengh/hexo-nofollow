@@ -13,7 +13,7 @@ Adds nofollow attribute to all external links in your hexo blog posts automatica
 This is an updated version of [hexo-autonofollow](https://www.npmjs.com/package/hexo-autonofollow). All the options are the same, so you can use this as a drop-in replacement.
 
 ## Features
-* Add `rel="external nofollow noopener noreferrer"` to all external links, SEO friendly.
+* Add `rel="external nofollow noopener noreferrer"` to all external links for security, privacy and SEO. [Read more](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
 * Add `target="_blank"`, Open external links in new window or tab. This can be disabled, see below.
 
 Hexo doesn't insert `target="_blank"` to all external links even if you set `external_link: true` (default value) in the _config.yml.
@@ -54,7 +54,7 @@ external_link: true
 - **enable** - Enable the plugin. Defaults to `false`.
 - **exclude** - Exclude hostname. Specify subdomain when applicable, including `www`
   - `'exclude1.com'` does not apply to `www.exclude1.com` nor `en.exclude1.com`.
-- **external_link** - Add `target="_blank"`. Defaults to `true`.
+- **external_link** - Add `target="_blank"`. [Defaults](https://hexo.io/docs/configuration#Writing) to `true`. [Recommend](https://css-tricks.com/use-target_blank/) to set it to false.
 
 ***Note:*** **external_link** setting is already in the default `_config.yml`.
 
