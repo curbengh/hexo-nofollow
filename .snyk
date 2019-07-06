@@ -1,0 +1,11 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.192.3
+patch: {}
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-LODASH-450202:
+    - '*':
+        reason: >-
+          Patch to be released in lodash@4.17.12. Tracking this PR for release:
+          https://github.com/lodash/lodash/pull/4336
+expires: '2019-08-01T00:00:00.000Z'
