@@ -1,12 +1,12 @@
 # hexo-nofollow
 
 [![npm version](https://badge.fury.io/js/hexo-nofollow.svg)](https://www.npmjs.com/package/hexo-nofollow)
-[![Build Status](https://travis-ci.com/weyusi/hexo-nofollow.svg?branch=master)](https://travis-ci.com/weyusi/hexo-nofollow)
-[![NPM Dependencies](https://david-dm.org/weyusi/hexo-nofollow.svg)](https://david-dm.org/weyusi/hexo-nofollow)
+[![Build Status](https://travis-ci.com/curbengh/hexo-nofollow.svg?branch=master)](https://travis-ci.com/curbengh/hexo-nofollow)
+[![NPM Dependencies](https://david-dm.org/curbengh/hexo-nofollow.svg)](https://david-dm.org/curbengh/hexo-nofollow)
 [![Known Vulnerabilities](https://snyk.io/test/npm/hexo-nofollow/badge.svg)](https://snyk.io/test/npm/hexo-nofollow)
-[![Greenkeeper badge](https://badges.greenkeeper.io/weyusi/hexo-nofollow.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/curbengh/hexo-nofollow.svg)](https://greenkeeper.io/)
 
-> :warning: Current version has unescaped character issue ([#3](https://github.com/weyusi/hexo-nofollow/issues/3), [#4](https://github.com/weyusi/hexo-nofollow/issues/4)) caused by a [bug in cheerio](https://github.com/cheeriojs/cheerio/issues/1198). Read [below section](#unescaped-character-issue) for a temporary fix.
+> :warning: Current version has unescaped character issue ([#3](https://github.com/curbengh/hexo-nofollow/issues/3), [#4](https://github.com/curbengh/hexo-nofollow/issues/4)) caused by a [bug in cheerio](https://github.com/cheeriojs/cheerio/issues/1198). Read [below section](#unescaped-character-issue) for a temporary fix.
 
 Adds nofollow attribute to all external links in your hexo blog posts automatically.
 
@@ -60,20 +60,20 @@ external_link: true
 
 ## Unescaped character issue
 
-Embedding HTML/XML in a codeblock in your post could cause issue when using this plugin with a minifier (see issue [#3](https://github.com/weyusi/hexo-nofollow/issues/3), [#4](https://github.com/weyusi/hexo-nofollow/issues/4)). This issue is caused by cheerio, the sole dependency of this plugin. In newer version (v1.0+) of cheerio, it does not properly escape character such as angle bracket, causing invalid syntax (e.g. `<<span>`) in the resulting html. While web browsers might render it just fine, minifier such as [html-minifier](https://github.com/kangax/html-minifier) requires strict syntax.
+Embedding HTML/XML in a codeblock in your post could cause issue when using this plugin with a minifier (see issue [#3](https://github.com/curbengh/hexo-nofollow/issues/3), [#4](https://github.com/curbengh/hexo-nofollow/issues/4)). This issue is caused by cheerio, the sole dependency of this plugin. In newer version (v1.0+) of cheerio, it does not properly escape character such as angle bracket, causing invalid syntax (e.g. `<<span>`) in the resulting html. While web browsers might render it just fine, minifier such as [html-minifier](https://github.com/kangax/html-minifier) requires strict syntax.
 
 This issue has been [reported upstream](https://github.com/cheeriojs/cheerio/issues/1198) and [a fix](https://github.com/cheeriojs/dom-serializer/pull/80) has been proposed.
 
-Meanwhile, I have included the fix in [decode-test](https://github.com/weyusi/hexo-nofollow/tree/decode-test) branch. To install this fix, change the version number of hexo-nofollow in your package.json to:
+Meanwhile, I have included the fix in [decode-test](https://github.com/curbengh/hexo-nofollow/tree/decode-test) branch. To install this fix, change the version number of hexo-nofollow in your package.json to:
 
 ```json
-  "hexo-nofollow": "weyusi/hexo-nofollow#decode-test",
+  "hexo-nofollow": "curbengh/hexo-nofollow#decode-test",
 ```
 
 and run `npm install --only=prod`.
 
 ## Credits
 All credits go to the following work:
-- [hexo-autonofollow](https://github.com/weyusi/hexo-nofollow) by liuzc
+- [hexo-autonofollow](https://github.com/curbengh/hexo-nofollow) by liuzc
 - [cheerio](https://github.com/cheeriojs/cheerio)
 - `target="_blank"` behaviour is noticed through this [commit](https://github.com/SukkaW/hexo-filter-nofollow/commit/6c5f49fb551237b42413c158b9294d58c4c8b221)

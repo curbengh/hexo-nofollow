@@ -2,9 +2,9 @@
   "name": "hexo-nofollow",
   "version": "1.0.9",
   "description": "Adds nofollow attribute to all external links in your hexo posts automatically.",
-  "author": "weyusi",
+  "author": "curben",
   "license": "MIT",
-  "homepage": "https://github.com/weyusi/hexo-nofollow",
+  "homepage": "https://github.com/curbengh/hexo-nofollow",
   "main": "index.js",
   "directories": {
     "lib": "./lib"
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/weyusi/hexo-nofollow.git"
+    "url": "https://github.com/curbengh/hexo-nofollow.git"
   },
   "keywords": [
     "hexo",
