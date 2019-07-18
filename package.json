@@ -1,6 +1,6 @@
 {
   "name": "hexo-nofollow",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.0-alpha.2",
   "description": "Adds nofollow attribute to all external links in your hexo posts automatically.",
   "author": "curben",
   "license": "MIT",
