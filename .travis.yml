@@ -14,6 +14,9 @@ script:
   - snyk test # Check node modules for vulnerability
   - snyk monitor # Update dependencies to snyk
 
+  - npm install standard
+  - standard
+
 branches:
   only:
   - master # Only build master branch
