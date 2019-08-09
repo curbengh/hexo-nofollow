@@ -64,10 +64,11 @@ Embedding HTML/XML in a codeblock in your post could cause issue when using this
 
 This issue has been [reported upstream](https://github.com/cheeriojs/cheerio/issues/1198) and [a fix](https://github.com/cheeriojs/dom-serializer/pull/80) has been proposed.
 
-Meanwhile, I have included the fix in [decode-test](https://github.com/curbengh/hexo-nofollow/tree/decode-test) branch. To install this fix, change the version number of hexo-nofollow in your package.json to:
+Meanwhile, I have included the fix in [v2.0](https://github.com/curbengh/hexo-nofollow/tree/v2.0) branch. To install this fix, change the version number of hexo-nofollow in your package.json to:
 
-```json
-  "hexo-nofollow": "curbengh/hexo-nofollow#decode-test",
+``` diff
+- "hexo-nofollow": "^1.0.10"
++ "hexo-nofollow": "curbengh/hexo-nofollow#v2.0"
 ```
 
 and run `npm install --only=prod`.
