@@ -16,10 +16,7 @@
   "engines": {
     "node": ">= 8.6.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/curbengh/hexo-nofollow.git"
-  },
+  "repository": "curbengh/hexo-nofollow",
   "keywords": [
     "hexo",
     "hexo-nofollow",
