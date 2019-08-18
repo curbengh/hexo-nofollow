@@ -29,7 +29,7 @@
     "target_blank"
   ],
   "dependencies": {
-    "cheerio": "curbengh/cheerio#decode-test"
+    "cheerio": "cheeriojs/cheerio#v1.0.0"
   },
   "greenkeeper": {
     "commitMessages": {
