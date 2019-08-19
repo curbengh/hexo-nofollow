@@ -62,7 +62,7 @@ external_link: true
 
 Embedding HTML/XML in a codeblock in your post could cause issue when using this plugin with a minifier (see issue [#3](https://github.com/curbengh/hexo-nofollow/issues/3), [#4](https://github.com/curbengh/hexo-nofollow/issues/4)). This issue is caused by cheerio, the sole dependency of this plugin. In newer version (v1.0+) of cheerio, it does not properly escape character such as angle bracket, causing invalid syntax (e.g. `<<span>`) in the resulting html. While web browsers might render it just fine, minifier such as [html-minifier](https://github.com/kangax/html-minifier) requires strict syntax.
 
-This issue has been [reported upstream](https://github.com/cheeriojs/cheerio/issues/1198) and [a fix](https://github.com/cheeriojs/dom-serializer/pull/80) has been proposed.
+This issue has been [reported upstream](https://github.com/cheeriojs/cheerio/issues/1198) and [a fix](https://github.com/cheeriojs/cheerio/pull/1307) has been merged but not yet released.
 
 Meanwhile, I have included the fix in [v2.0](https://github.com/curbengh/hexo-nofollow/tree/v2.0) branch. To install this fix, change the version number of hexo-nofollow in your package.json to:
 
