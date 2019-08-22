@@ -2,9 +2,6 @@
 
 [![npm version](https://badge.fury.io/js/hexo-nofollow.svg)](https://www.npmjs.com/package/hexo-nofollow)
 [![Build Status](https://travis-ci.com/curbengh/hexo-nofollow.svg?branch=master)](https://travis-ci.com/curbengh/hexo-nofollow)
-[![NPM Dependencies](https://david-dm.org/curbengh/hexo-nofollow.svg)](https://david-dm.org/curbengh/hexo-nofollow)
-[![Known Vulnerabilities](https://snyk.io/test/npm/hexo-nofollow/badge.svg)](https://snyk.io/test/npm/hexo-nofollow)
-[![Greenkeeper badge](https://badges.greenkeeper.io/curbengh/hexo-nofollow.svg)](https://greenkeeper.io/)
 
 Adds nofollow attribute to all external links in your hexo blog posts automatically.
 

@@ -9,15 +9,5 @@ cache:
     - "node_modules" # cache the modules for faster build
 
 script:
-  - npm install snyk
-  - snyk auth $SNYK_TOKEN
-  - snyk test # Check node modules for vulnerability
-  - snyk monitor # Update dependencies to snyk
-
   - npm install standard
   - standard
-
-branches:
-  only:
-  - master # Only build master branch
-  - /^greenkeeper.*$/ # Greenkeeper branches
