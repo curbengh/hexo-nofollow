@@ -21,7 +21,9 @@ nofollow:
   exclude:
     - exclude1.com
     - exclude2.com
+  ignore_target: false
 ```
 
 - **enable** - Enable the plugin. Defaults to **false**.
 - **exclude** - Exclude hostname.
+- **ignore_target** - Enable it to add nofollow attribute even when the link has `target` attribute. Defaults to **false**.
