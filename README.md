@@ -38,3 +38,7 @@ nofollow:
 
 - **enable** - Enable the plugin. Defaults to **false**.
 - **exclude** - Exclude hostname.
+
+## About
+
+This plugin is originally based on [hexo-autonofollow](https://github.com/liuzc/hexo-autonofollow) (by [liuzc](https://github.com/liuzc)) and share its options, thus suitable as a drop-in replacement. By dropping [cheerio](https://github.com/cheeriojs/cheerio) and replacing it with native regex, this plugin can perform faster and avoid certain [cheerio's](https://github.com/cheeriojs/cheerio/issues/1198) [quirks](https://github.com/cheeriojs/cheerio/issues/1031).
