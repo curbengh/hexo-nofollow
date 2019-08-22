@@ -6,8 +6,6 @@
 [![Known Vulnerabilities](https://snyk.io/test/npm/hexo-nofollow/badge.svg)](https://snyk.io/test/npm/hexo-nofollow)
 [![Greenkeeper badge](https://badges.greenkeeper.io/curbengh/hexo-nofollow.svg)](https://greenkeeper.io/)
 
-> :warning: Current version has unescaped character issue ([#3](https://github.com/curbengh/hexo-nofollow/issues/3), [#4](https://github.com/curbengh/hexo-nofollow/issues/4)) caused by a [bug in cheerio](https://github.com/cheeriojs/cheerio/issues/1198). Read [below section](#unescaped-character-issue) for a temporary fix.
-
 Adds nofollow attribute to all external links in your hexo blog posts automatically.
 
 This is an updated version of [hexo-autonofollow](https://www.npmjs.com/package/hexo-autonofollow). All the options are the same, so you can use this as a drop-in replacement.
@@ -57,21 +55,6 @@ external_link: true
 - **external_link** - Add `target="_blank"`. [Defaults](https://hexo.io/docs/configuration#Writing) to `true`. [Recommend](https://css-tricks.com/use-target_blank/) to set it to false.
 
 ***Note:*** **external_link** setting is already in the default `_config.yml`.
-
-## Unescaped character issue
-
-Embedding HTML/XML in a codeblock in your post could cause issue when using this plugin with a minifier (see issue [#3](https://github.com/curbengh/hexo-nofollow/issues/3), [#4](https://github.com/curbengh/hexo-nofollow/issues/4)). This issue is caused by cheerio, the sole dependency of this plugin. In newer version (v1.0+) of cheerio, it does not properly escape character such as angle bracket, causing invalid syntax (e.g. `<<span>`) in the resulting html. While web browsers might render it just fine, minifier such as [html-minifier](https://github.com/kangax/html-minifier) requires strict syntax.
-
-This issue has been [reported upstream](https://github.com/cheeriojs/cheerio/issues/1198) and [a fix](https://github.com/cheeriojs/cheerio/pull/1307) has been merged but not yet released.
-
-Meanwhile, I have included the fix in [v2.0](https://github.com/curbengh/hexo-nofollow/tree/v2.0) branch. To install this fix, change the version number of hexo-nofollow in your package.json to:
-
-``` diff
-- "hexo-nofollow": "^1.0.10"
-+ "hexo-nofollow": "curbengh/hexo-nofollow#v2.0"
-```
-
-and run `npm install --only=prod`.
 
 ## Credits
 All credits go to the following work:
