@@ -13,23 +13,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/liuzc/hexo-autonofollow.git"
-  },
+  "repository": "SukkaW/hexo-filter-nofollow",
   "keywords": [
     "hexo",
     "SEO",
-    "hexo-suka-autonofollow",
+    "hexo-filter-nofollow",
     "nofollow",
     "external"
   ],
   "author": "SukkaW (isukkaw@gmail.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SukkaW/hexo-suka-autonofollow/issues"
+    "url": "https://github.com/SukkaW/hexo-filter-nofollow/issues"
   },
-  "homepage": "https://github.com/SukkaW/hexo-suka-autonofollow",
+  "homepage": "https://github.com/SukkaW/hexo-filter-nofollow",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2"
   }
