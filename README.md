@@ -5,7 +5,7 @@
 
 Adds nofollow attribute to all external links in your hexo blog posts automatically.
 
-This is an updated version of [hexo-autonofollow](https://www.npmjs.com/package/hexo-autonofollow). All the options are the same, so you can use this as a drop-in replacement.
+This is an updated version of [hexo-autonofollow](https://github.com/liuzc/hexo-autonofollow). All the options are the same, so you can use this as a drop-in replacement.
 
 ## Features
 * Add `rel="external nofollow noopener noreferrer"` to all external links for security, privacy and SEO. [Read more](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types).
@@ -55,6 +55,6 @@ external_link: true
 
 ## Credits
 All credits go to the following work:
-- [hexo-autonofollow](https://github.com/curbengh/hexo-nofollow) by liuzc
+- [hexo-autonofollow](https://github.com/liuzc/hexo-autonofollow) by liuzc
 - Regex is [created by](https://github.com/hexojs/hexo/pull/3685) SukkaW
 - `target="_blank"` behaviour is noticed through this [commit](https://github.com/SukkaW/hexo-filter-nofollow/commit/6c5f49fb551237b42413c158b9294d58c4c8b221)
