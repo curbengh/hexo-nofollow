@@ -76,5 +76,5 @@ and run `npm install --only=prod`.
 ## Credits
 All credits go to the following work:
 - [hexo-autonofollow](https://github.com/curbengh/hexo-nofollow) by liuzc
-- [cheerio](https://github.com/cheeriojs/cheerio)
+- Regex is [created by](https://github.com/hexojs/hexo/pull/3685) SukkaW
 - `target="_blank"` behaviour is noticed through this [commit](https://github.com/SukkaW/hexo-filter-nofollow/commit/6c5f49fb551237b42413c158b9294d58c4c8b221)
