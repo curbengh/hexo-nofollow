@@ -28,9 +28,6 @@
     "target-blank",
     "target_blank"
   ],
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.3"
-  },
   "greenkeeper": {
     "commitMessages": {
       "initialBadge": "docs(readme): Add Greenkeeper badge",
