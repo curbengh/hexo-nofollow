@@ -1,5 +1,19 @@
 # hexo-nofollow
 
+## Deprecation
+
+This plugin has been deprecated. I'm now working on [hexo-filter-nofollow](https://github.com/hexojs/hexo-filter-nofollow).
+
+If you prefer this plugin and doesn't want to see the deprecation warning,
+
+``` diff
+package.json
+-  "hexo-nofollow": "^2.0.0"
++  "hexo-nofollow": "curbengh/hexo-nofollow"
+```
+
+---
+
 [![npm version](https://badge.fury.io/js/hexo-nofollow.svg)](https://www.npmjs.com/package/hexo-nofollow)
 [![Build Status](https://travis-ci.com/curbengh/hexo-nofollow.svg?branch=master)](https://travis-ci.com/curbengh/hexo-nofollow)
 
